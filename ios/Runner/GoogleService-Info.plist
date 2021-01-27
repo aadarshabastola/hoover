@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>192536061178-vdvfkop8nhocspndmc4j943rem4co9gb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.192536061178-vdvfkop8nhocspndmc4j943rem4co9gb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCwN40u4S-ptB-0clf67AZIKAzRmYgQ8aY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>192536061178</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.aadarshabastola.hoover</string>
+	<key>PROJECT_ID</key>
+	<string>hoover-8274a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hoover-8274a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:192536061178:ios:592fd63472588499c75543</string>
+	<key>DATABASE_URL</key>
+	<string>https://hoover-8274a-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
