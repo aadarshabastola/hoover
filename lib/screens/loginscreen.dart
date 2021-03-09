@@ -67,7 +67,7 @@ class _LoginPageState extends State<LoginPage> {
         style: TextStyle(fontSize: 15),
       ),
     );
-    scaffoldKey.currentState.showSnackBar(snackbar);
+    ScaffoldMessenger.of(context).showSnackBar(snackbar);
   }
 
   @override
@@ -166,7 +166,7 @@ class _LoginPageState extends State<LoginPage> {
                       SizedBox(
                         height: 20.0,
                       ),
-                      FlatButton(
+                      TextButton(
                         onPressed: () {
                           Navigator.pushNamed(context, RegistrationPage.id);
                         },
