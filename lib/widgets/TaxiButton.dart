@@ -9,19 +9,23 @@ class TaxiButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(25.0),
-      ),
+    return ElevatedButton(
       onPressed: onPressed,
-      color: color,
-      textColor: Colors.white,
+      style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all<Color>(color),
+        shape: MaterialStateProperty.all(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(25.0),
+          ),
+        ),
+      ),
       child: Container(
         height: 50,
         child: Center(
           child: Text(
             title,
             style: TextStyle(
+              color: Colors.white,
               fontSize: 18,
               fontFamily: 'Brand-Bold',
             ),

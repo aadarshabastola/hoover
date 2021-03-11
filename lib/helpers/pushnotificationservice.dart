@@ -19,7 +19,7 @@ class PushNotificationService {
     );
   }
 
-  Future<String> getToken() async {
+  Future getToken() async {
     String token = await fcm.getToken();
     print('token $token');
 

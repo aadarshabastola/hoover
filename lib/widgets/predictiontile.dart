@@ -50,11 +50,10 @@ class PredicitonTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FlatButton(
+    return TextButton(
       onPressed: () {
         getPlaceDetails(prediction.placeId, context);
       },
-      padding: EdgeInsets.all(0),
       child: Container(
         child: Column(
           children: [

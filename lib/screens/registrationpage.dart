@@ -28,7 +28,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
         style: TextStyle(fontSize: 15),
       ),
     );
-    scaffoldKey.currentState.showSnackBar(snackbar);
+    ScaffoldMessenger.of(context).showSnackBar(snackbar);
   }
 
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -213,7 +213,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                       SizedBox(
                         height: 30.0,
                       ),
-                      FlatButton(
+                      TextButton(
                         onPressed: () {
                           Navigator.popAndPushNamed(context, LoginPage.id);
                         },

@@ -18,7 +18,7 @@ import 'package:provider/provider.dart';
 
 class HelperMethods {
   static void getCurrentUserInfo() async {
-    currentFirebaseUser = await FirebaseAuth.instance.currentUser;
+    currentFirebaseUser = FirebaseAuth.instance.currentUser;
     String userId = currentFirebaseUser.uid;
 
     DatabaseReference userRef =
@@ -105,7 +105,7 @@ class HelperMethods {
     return randInt.toDouble();
   }
 
-  static sendNotification(String token, context, String ride_id) async {
+  static sendNotification(String token, context, String rideId) async {
     var destination =
         Provider.of<AppData>(context, listen: false).destinationAddress;
 
@@ -123,7 +123,7 @@ class HelperMethods {
       'click_action': 'FLUTTER_NOTIFICATION_CLICK',
       'id': '1',
       'status': 'done',
-      'ride_id': ride_id,
+      'ride_id': rideId,
     };
 
     Map bodyMap = {

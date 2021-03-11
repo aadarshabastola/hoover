@@ -13,7 +13,6 @@ import 'package:hoover/globalVariables.dart';
 import 'package:hoover/helpers/firehelper.dart';
 import 'package:hoover/helpers/helpermethods.dart';
 import 'package:hoover/screens/brand_colors.dart';
-import 'package:hoover/screens/loginscreen.dart';
 import 'package:hoover/screens/searchpage.dart';
 import 'package:hoover/styles/styles.dart';
 import 'package:hoover/widgets/BrandDivider.dart';
@@ -24,7 +23,6 @@ import 'package:hoover/widgets/TaxiButton.dart';
 import 'package:hoover/widgets/ridevariables.dart';
 import 'package:outline_material_icons/outline_material_icons.dart';
 import 'dart:io';
-import 'package:hoover/widgets/ridevariables.dart';
 
 import 'package:provider/provider.dart';
 

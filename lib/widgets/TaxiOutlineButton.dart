@@ -10,14 +10,18 @@ class TaxiOutlineButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return OutlineButton(
-        borderSide: BorderSide(color: color),
-        shape: new RoundedRectangleBorder(
-          borderRadius: new BorderRadius.circular(25.0),
-        ),
+    return OutlinedButton(
         onPressed: onPressed,
-        color: color,
-        textColor: color,
+        style: ButtonStyle(
+          textStyle: MaterialStateProperty.all(TextStyle(color: color)),
+          backgroundColor: MaterialStateProperty.all(color),
+          shape: MaterialStateProperty.all(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(25.0),
+              side: BorderSide(color: color),
+            ),
+          ),
+        ),
         child: Container(
           height: 50.0,
           child: Center(
